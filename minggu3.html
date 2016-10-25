@@ -14,6 +14,52 @@
 		<li><a href="minggu2.html">Minggu 2</a></li>
 		<li><a href="minggu3.html">Minggu 3</a></li>
 	</ul>
+		&nbsp;<br><br><br>
+	 <SCRIPT> 
+		function warna(pilihan) {
+			alert("Anda klik buton warna " + pilihan + "")
+			document.bgColor=pilihan
+		} 
+	</SCRIPT> 
+	<h1>Pilih warna favorit anda.</h1> 
+	<FORM> 
+		<INPUT TYPE="button" VALUE="Biru" onClick="warna('lightblue')" style="background: blue;"> 
+		<INPUT TYPE="button" VALUE="Pink" onClick="warna('pink')" style="background: pink;"> 
+		<INPUT TYPE="button" VALUE="Coklat" onClick="warna('burlywood')" style="background: brown;"> 
+		<INPUT TYPE="button" VALUE="Kelabu" onClick="warna('darkgray')" style="background: grey;"> 
+		<INPUT TYPE="button" VALUE="Oranye" onClick="warna('peachpuff')" style="background: orange;"> 
+		<INPUT TYPE="button" VALUE="Putih" onClick="warna('white')" style="background: white;">                   
+	</FORM>  
+	</SCRIPT>
+	<SCRIPT>
+	function dontClick(){
+		alert("I told you not to click !");
+	}
+	</SCRIPT> 
+	<H1>Javascript Button</H1> 
+		<FORM>        
+			<INPUT TYPE="BUTTON"  VALUE="Jangan di Klik" onClick="alert('Jangan Klik saya!!!'); return value"> 
+		</FORM> 
+	
+	<h2>Mengganti Background Color</h2>
+	<p>Mouse over dan Mouse out!</p>
+
+	<table style="width:300px;height:100px">
+	  <tr>
+	    <td onmouseover="bgChange(this.style.backgroundColor)"
+		onmouseout="bgChange('#0D47A1')"
+		style="background-color:Khaki">
+	    </td>
+	    <td onmouseover="bgChange(this.style.backgroundColor)"
+		onmouseout="bgChange('#0D47A1')"
+		style="background-color:PaleGreen">
+	    </td>
+	    <td onmouseover="bgChange(this.style.backgroundColor)"
+		onmouseout="bgChange('#0D47A1')"
+		style="background-color:Silver">
+	    </td>
+	  </tr>
+	</table>
 </center>
 </body>
 </html>
