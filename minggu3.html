@@ -5,16 +5,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Tugas Pemrograman Web</title>
 	<link rel="stylesheet" href="style.css">
+	<script>
+		function bgChange(bg) {
+		    document.body.style.background = bg;
+		}
+	</script>
 </head>
 <body>
 <center>
+<script>
+window.setTimeout("waktu()",1000); 
+function waktu() { 
+        var tanggal = new Date(); 
+        setTimeout("waktu()",1000); 
+        document.getElementById("jam").innerHTML = tanggal.getHours(); 
+        document.getElementById("menit").innerHTML = tanggal.getMinutes();
+        document.getElementById("detik").innerHTML = tanggal.getSeconds();
+    }
+</script>
+<div id="jam-digital">
+    <div id="hours">
+        <p id="jam"></p>
+    </div>
+    <div id="titik1">
+    	<p>:</p>
+    </div>
+    <div id="minute">
+        <p id="menit"></p>
+    </div>
+    <div id="titik1">
+    	<p>:</p>
+    </div>
+    <div id="second">
+        <p id="detik"></p>
+    </div>
+</div>
 	<h1>Selamat Datang</h1>&nbsp;&nbsp;
-	<ul>
-		<li><a href="minggu1.html">Minggu 1</a></li>
-		<li><a href="minggu2.html">Minggu 2</a></li>
-		<li><a href="minggu3.html">Minggu 3</a></li>
+	<ul class="float">
+		<li><a href="minggu1.html" title="Klik Untuk Melihat Tugas Minggu 1">Minggu 1</a></li>
+		<li><a href="minggu2.html" title="Klik Untuk Melihat Tugas Minggu 2">Minggu 2</a></li>
+		<li><a href="minggu3.html" title="Klik Untuk Melihat Tugas Minggu 3">Minggu 3</a></li>
 	</ul>
-		&nbsp;<br><br><br>
+	&nbsp;<br><br><br>
 	 <SCRIPT> 
 		function warna(pilihan) {
 			alert("Anda klik buton warna " + pilihan + "")
@@ -30,16 +62,6 @@
 		<INPUT TYPE="button" VALUE="Oranye" onClick="warna('peachpuff')" style="background: orange;"> 
 		<INPUT TYPE="button" VALUE="Putih" onClick="warna('white')" style="background: white;">                   
 	</FORM>  
-	</SCRIPT>
-	<SCRIPT>
-	function dontClick(){
-		alert("I told you not to click !");
-	}
-	</SCRIPT> 
-	<H1>Javascript Button</H1> 
-		<FORM>        
-			<INPUT TYPE="BUTTON"  VALUE="Jangan di Klik" onClick="alert('Jangan Klik saya!!!'); return value"> 
-		</FORM> 
 	
 	<h2>Mengganti Background Color</h2>
 	<p>Mouse over dan Mouse out!</p>
